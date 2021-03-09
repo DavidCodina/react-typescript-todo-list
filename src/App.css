@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900&display=swap');
+
+
+html {
+  /* Safari needs this to prevent horizontal scrolling. */
+  max-width: 100%;
+  overflow-x:hidden;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  color: #333;
+  background-color: #FFF;
+  overflow-x:hidden; /* Safari needs this to prevent horizontal scrolling. */
+}
+
+.transition-none * {
+  -webkit-transition: none !important;
+     -moz-transition: none !important;
+      -ms-transition: none !important;
+       -o-transition: none !important;
+          transition: none !important;
+}
+
+main { min-height: 100vh; }
+
+p {
+  margin-bottom: 25px;
+  line-height: 1.75;
+}
+
+figure {
+  display:block;
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  width: 90%;
+  margin: 0 auto 50px auto;
+  font-size: 14px;
+  color: #333;
+  background-color: rgb(255,255,255);
+  border: 2px solid #333;
+  border-radius: 15px;
+  overflow:scroll;
+}
+
+.article {
+  min-height: 300px;
+  margin: 0 auto 50px auto;
+  padding: 25px;
+  color: rgb(125,125,125);
+  color: #333;
+	background-color: rgb(245,245,245);
+  border: 2px solid rgb(150,150,150);
+  border-radius: 25px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.25);
+}
+
+
+.text-white-3d {
+  margin-bottom: 25px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(150,150,150,0.75);
+  font-size: 40px;
+  font-family: Montserrat;
+  color: #FFF;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow:
+  0 1px 0 hsl(174,5%,86%),
+  0 2px 0 hsl(174,5%, 84%),
+  0 3px 0 hsl(174,5%, 82%),
+  0 4px 0 hsl(174,5%, 80%),
+  0 5px 0 hsl(174,5%, 78%),
+  0 6px 0 hsl(174,5%, 76%),
+  0 7px 0 hsl(174,5%, 74%),
+  0 8px 0 hsl(174,5%, 72%),
+  0 9px 0 rgba(140,140,140,0.5),
+  /* shadows */
+  0px 10px 2px  rgba(16, 16, 16, 0.2),
+  0px 12px 4px  rgba(16, 16, 16, 0.2);
+}
+
+@media (max-width: 400px) { .text-white-3d { font-size: 32px; }}
+
+.child-mb-1 > * { margin-bottom: 0.25rem !important; }
+.child-mb-2 > * { margin-bottom: 0.5rem !important;  }
+.child-mb-3 > * { margin-bottom: 1rem !important;    }
+.child-mb-4 > * { margin-bottom: 1.5rem !important;  }
+.child-mb-5 > * { margin-bottom: 3rem !important;    }
+
+.w-90 { width: 90% !important; }
+
+.flex-1 { flex: 1; }
+
+#primary-navbar {
+  background: #000000;
+  background: -webkit-linear-gradient(to left, #434343, #000000);
+  background: linear-gradient(to left, #434343, #000000);
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.75);
+}
+
+
+/* =============================================================================
+
+============================================================================= */
+
+
+.todo, .todo:focus, .todo:active {
+  height: auto;
+  resize: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* =============================================================================
+                                Media Queries
+============================================================================= */
+/* Mobile-first media queries that follow Bootstrap's breakpoints. */
+
+/* sm */
+@media (min-width: 576px) {}
+
+/* md */
+@media (min-width: 768px) {}
+
+/* lg */
+@media (min-width: 992px) {}
+
+/* xl */
+@media (min-width: 1200px) {}
+
+/* xxl */
+@media (min-width: 1400px) { main > .container-fluid { max-width: 1400px; }}
